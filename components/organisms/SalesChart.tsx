@@ -151,8 +151,6 @@ function renderPieChart(data: SalesRecord[]) {
 }
 
 export function SalesChart({ data, chartType, threshold, year }: SalesChartProps) {
-    threshold <= 0 ? true : r.revenue >= threshold
-  );
   const chartData = chartType === "pie" ? data : (threshold > 0 ? data : data);
 
   return (
@@ -190,3 +188,4 @@ export function SalesChart({ data, chartType, threshold, year }: SalesChartProps
     </Card>
   );
 }
+
